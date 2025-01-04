@@ -35,15 +35,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
 			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
 			.date {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
@@ -73,7 +64,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 								)
 							}
 						</div>
-						<h1>{title}</h1>
+						<h1 class="font-semibold">{title}</h1>
 						<hr />
 					</div>
 					<slot />
